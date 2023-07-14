@@ -9,5 +9,5 @@ from my_dreams.serializers.dream_serializer import DreamSerializer
 class DreamViewSet(ModelViewSet):
     queryset = Dream.objects.all()
     serializer_class = DreamSerializer
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = [IsAuthenticated]
 
